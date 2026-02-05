@@ -1,0 +1,64 @@
+.product-detail {
+  display: flex;
+  gap: 50px;
+  padding: 60px;
+  background: #f4f4f4;
+  min-height: 100vh;
+}
+
+.detail-image img {
+  width: 420px;
+  border-radius: 8px;
+  background: white;
+  padding: 20px;
+}
+
+.detail-info {
+  max-width: 500px;
+}
+
+.detail-info h1 {
+  color: #2e2e2e;
+  margin-bottom: 10px;
+}
+
+.detail-price {
+  font-size: 24px;
+  margin: 15px 0;
+  color: #f5c518; /* AIDA yellow */
+}
+
+.detail-price span {
+  color: #888;
+  text-decoration: line-through;
+  margin-left: 10px;
+}
+
+.detail-desc {
+  color: #555;
+  line-height: 1.6;
+  margin-top: 15px;
+}
+
+.detail-actions {
+  margin-top: 30px;
+}
+
+.btn-cart {
+  background: #2e2e2e; /* AIDA dark grey */
+  color: white;
+  padding: 12px 26px;
+  border: none;
+  margin-right: 15px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btn-buy {
+  background: #f5c518; /* AIDA yellow */
+  color: black;
+  padding: 12px 26px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}

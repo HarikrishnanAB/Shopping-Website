@@ -1,0 +1,81 @@
+/* Page center */
+.order-success-wrapper {
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f5f5;
+}
+
+/* Main card */
+.order-success-card {
+  background: #ffffff;
+  width: 600px;
+  padding: 40px;
+  text-align: center;
+  border: 1px solid #e5e5e5;
+}
+
+/* Heading */
+.order-success-card h1 {
+  margin-bottom: 15px;
+  color: #2f3e46;
+}
+
+/* Message */
+.order-msg {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+/* Product section */
+.order-product {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.order-product img {
+  width: 80px;
+  height: auto;
+  border: 1px solid #ddd;
+}
+
+.order-info h4 {
+  margin: 0 0 5px;
+}
+
+.order-info p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.order-status {
+  color: #ff9800;
+  font-size: 13px;
+}
+
+/* Buttons */
+.order-actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn-primary {
+  background: #ffc107;
+  border: none;
+  padding: 10px 18px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-secondary {
+  background: #e0e0e0;
+  border: none;
+  padding: 10px 18px;
+  cursor: pointer;
+}

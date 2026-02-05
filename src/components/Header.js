@@ -1,9 +1,26 @@
 import { NavLink } from "react-router-dom";
+import "./Header.css";
 
 function Header() {
   return (
     <>
-      {/* TOP HEADER */}
+      {/* ===== TOP UTILITY BAR ===== */}
+      <div className="top-utility-bar">
+        <div className="utility-left">
+          <span>About</span>
+          <span>Contact</span>
+          <span>Help</span>
+          <span>FAQs</span>
+        </div>
+
+        <div className="utility-right">
+          <span>My Account</span>
+          <span>USD</span>
+          <span>EN</span>
+        </div>
+      </div>
+
+      {/* ===== MAIN HEADER ===== */}
       <div className="top-header">
         <div className="logo">
           <span className="logo-dark">AIDA</span>
@@ -21,7 +38,7 @@ function Header() {
         </div>
       </div>
 
-      {/* NAV BAR */}
+      {/* ===== NAV BAR ===== */}
       <div className="nav-bar">
         <div className="categories">☰ Categories</div>
 
@@ -30,7 +47,8 @@ function Header() {
             Home
           </NavLink>
           <NavLink to="/shop">Shop</NavLink>
-          <span>Shop Detail</span>
+          <NavLink to="/shop-detail">Shop Detail</NavLink>
+
           <span>Contact</span>
         </div>
 

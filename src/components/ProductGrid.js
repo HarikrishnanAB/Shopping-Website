@@ -1,17 +1,14 @@
 import products from "../data/products";
 import ProductCard from "./ProductCard";
 
-function ProductGrid() {
+function FeaturedProducts() {
   return (
-    <section className="products">
-      <h2>Recent Products</h2>
-      <div className="product-grid">
-        {products.map(p => (
-          <ProductCard key={p.id} product={p} />
-        ))}
-      </div>
-    </section>
+    <div className="products-grid">
+      {products.map((product) => (
+        <ProductCard key={product.id} product={product} />
+      ))}
+    </div>
   );
 }
 
-export default ProductGrid;
+export default FeaturedProducts;
