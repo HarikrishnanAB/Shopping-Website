@@ -2,12 +2,14 @@ import products from "../data/products";
 import ProductCard from "./ProductCard";
 
 function FeaturedProducts() {
+  const featured = products.slice(0, 8);
+
   return (
     <section className="featured-products">
       <h2 className="section-title">FEATURED PRODUCTS</h2>
 
       <div className="products-grid">
-        {products.map((item) => (
+        {featured.map((item) => (
           <ProductCard key={item.id} product={item} />
         ))}
       </div>

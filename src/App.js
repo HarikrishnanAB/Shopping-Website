@@ -12,20 +12,18 @@ import Checkout from "./pages/Checkout";
 import OrderSuccess from "./pages/OrderSuccess";
 import ShopDetail from "./pages/ShopDetail";
 import OrderCancelled from "./pages/OrderCancelled";
+import CategoryShop from "./pages/CategoryShop";
+
 
 import "./App.css";
 
 function App() {
   return (
     <>
-      {/* Fixed Header */}
       <Header />
-
-      {/* Fix scroll position when route changes */}
       <ScrollToTop />
 
       <Routes>
-        {/* HOME */}
         <Route
           path="/"
           element={
@@ -37,22 +35,13 @@ function App() {
           }
         />
 
-        {/* SHOP */}
         <Route path="/shop" element={<Shop />} />
-
-        {/* PRODUCT DETAILS */}
         <Route path="/product/:id" element={<ProductDetail />} />
-
-        {/* CHECKOUT */}
         <Route path="/checkout" element={<Checkout />} />
-
-        {/* ORDER SUCCESS */}
         <Route path="/order-success" element={<OrderSuccess />} />
-
-        {/* SHOP DETAILS / ORDERS */}
         <Route path="/shop-detail" element={<ShopDetail />} />
-
         <Route path="/order-cancelled" element={<OrderCancelled />} />
+        <Route path="/category/:category" element={<CategoryShop />} />
       </Routes>
     </>
   );

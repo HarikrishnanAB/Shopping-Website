@@ -2,17 +2,22 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 function ScrollToTop() {
-  const { pathname } = useLocation();
+  const location = useLocation();
 
   useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: "instant"
-    });
-  }, [pathname]);
+    // force scroll to top on route change
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+
+  useEffect(() => {
+    // force scroll to top on browser reload
+    window.onbeforeunload = () => {
+      window.scrollTo(0, 0);
+    };
+  }, []);
 
   return null;
 }
 
 export default ScrollToTop;
+

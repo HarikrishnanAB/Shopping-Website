@@ -1,23 +1,26 @@
-// src/components/ProductCard.js
-import { Link } from "react-router-dom";
-import "./ProductCard.css";
+import { useNavigate } from "react-router-dom";
 
 function ProductCard({ product }) {
+  const navigate = useNavigate();
+
   return (
-    <Link to={`/product/${product.id}`} className="product-link">
-      <div className="product-card">
-        <img src={product.image} alt={product.name} />
+    <div
+      className="product-card"
+      onClick={() => navigate(`/product/${product.id}`)}
+    >
+      <img src={product.image} alt={product.name} />
 
-        <h4>{product.name}</h4>
+      <h4>{product.name}</h4>
 
-        <p className="price">
-          ₹{product.price}
-          <span> ₹{product.oldPrice}</span>
-        </p>
-
-        <div className="stars">⭐⭐⭐⭐☆ (99)</div>
+      <div className="price">
+        ₹{product.price}
+        <span> ₹{product.oldPrice}</span>
       </div>
-    </Link>
+
+      <div className="rating">
+        ⭐ ⭐ ⭐ ⭐ ☆ <span>(99)</span>
+      </div>
+    </div>
   );
 }
 

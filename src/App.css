@@ -512,3 +512,37 @@ body {
 .page-container {
   padding-top: 90px; /* adjust to your header height */
 }
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 40px 0;
+}
+
+.pagination button {
+  padding: 8px 14px;
+  border: 1px solid #ddd;
+  background: #fff;
+  cursor: pointer;
+}
+
+.pagination button.active {
+  background: #ffc107;
+  border-color: #ffc107;
+  font-weight: 600;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+.shop-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
